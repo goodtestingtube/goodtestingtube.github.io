@@ -1,0 +1,26 @@
+.header, .nav {
+	margin: auto;
+	width: 75%;
+	max-width: 512px;
+
+}
+.banner {
+	width: 100%;
+	max-width: 512px;
+	margin: auto;
+	display: block;
+}
+.arsed {
+	max-width: 768px;
+	margin: auto;
+}
+.nav {
+	background: #000;
+	color: #fff;
+}
+.nav a:link, .nav a:visited {
+	color: #fc0;
+}
+.nav a:active {
+	color: #fff;
+}
