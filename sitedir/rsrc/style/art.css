@@ -1,0 +1,29 @@
+body {
+    background: #ffcc99;
+    color: #000;
+}
+
+.main {
+    max-width: 480px;
+    text-align: center;
+    margin: auto;
+}
+
+.piece {
+    border: 3px solid #cc6666;
+    width: 240px;
+}
+
+.recent_doodles {
+    width: 360px;
+    text-align: center;
+    margin: auto;
+}
+
+.art_title {
+    font-size: 130%;
+}
+
+.art_thumbnail {
+    width: 64px;
+}
