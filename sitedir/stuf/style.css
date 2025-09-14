@@ -1,0 +1,79 @@
+html {
+    background: #f60;
+    color: #000;
+}
+
+.container {
+    max-width: 60%;
+    margin: auto;
+}
+
+.badbunsen_logo_symbol {
+    width: 128px;
+    display: block;
+    filter: drop-shadow(0 0 0 #fff);
+    -webkit-filter: drop-shadow(0 0 0 #fff);
+    transition: filter 0.1s ease-in;
+    -webkit-transition: filter 0.1s ease-in;
+}
+
+.badbunsen_logo_symbol:hover {
+    filter: drop-shadow(0 0 12px #fff) sepia(100%) hue-rotate(20deg) saturate(500%) brightness(150%);
+    -webkit-filter: drop-shadow(0 0 12px #fff) sepia(100%) hue-rotate(20deg) saturate(500%) brightness(150%);
+}
+
+.menu {
+    position: fixed;
+    bottom: -5px;
+    left: -5px;
+    z-index: 1;
+}
+.menu_dropdown {
+    position: fixed;
+    bottom: 32px;
+    left: 120px;
+    background: #1f0e7e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 120%;
+    font-style: italic;
+    font-weight: bold;
+    display: none;
+    pointer-events: none;
+    z-index: 2;
+    filter: drop-shadow(-2px 2px 4px #000)
+}
+
+.mnubtn:hover .menu_dropdown {
+    pointer-events:all;
+    display: block;
+}
+
+.menu_dropdown a:link,
+.menu_dropdown a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    transition: font-weight 0.3s ease-in-out, color 0.3s ease-in-out;
+    -webkit-transition: font-weight 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #ff0;
+    font-weight: 900;
+}
+
+.scrn {
+    background: #000;
+}
+
+.bb_menu_logo {
+    width: 200px;
+}
+
+.menupntr {
+    position: absolute;
+    top: -125px;
+    left: 25px;
+}
