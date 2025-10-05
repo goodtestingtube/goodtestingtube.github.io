@@ -1,0 +1,64 @@
+<div class="headofdoom">
+				<img src="assets/head/bleh.gif"
+					width="100%"
+					height="100%"
+						alt="my persona's head, spinning. opens the menu on mobile devices."
+						title="my persona's head, spinning. opens the menu on mobile devices."
+				id="floatinghead">
+				</div>
+				<nav>
+					<span id="navmsg">
+						<noscript>no javascript support was detected! 
+							unfortunately I haven't made a JS-less version yet. 
+							maybe check back soon or enable it for this site?</noscript>
+					</span>
+					<div class="navdesktop">
+					navbar = <br>
+					<a href="/">index</a> + <br>
+					<a href="/prtfolio">prtfolio</a> + <br>
+					<a href="/personal">personal</a> + <br>
+					<a href="/freestuf">freestuf</a> + <br>
+					<a href="/contact">contact</a> + <br>
+					<a href="/about">about</a> + <br>
+					<a href="/credits">credits</a>
+					</div>
+					<hr>
+				</nav>
+
+				<script>
+				// change face on desktop to surprised when hovering over site hit counter
+				$("#sitehits").on("mouseover", function () {
+					$("#floatinghead").attr('class', 'ohmy');
+				});
+
+				// change face back to normal when mouse is not over site hit counter anymore
+				$("#sitehits").on("mouseout", function () {
+					$("#floatinghead").removeAttr('class');
+				});
+
+				// the head activates the menu
+				$("#floatinghead").on("click", function () {
+					openSesame();
+				});
+
+				$("#navmsg").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&uparrow; " + "head = menu opener");
+
+				function openSesame() {
+
+					//is the menu already opened?
+					// the if condition below answers this.if it's detected,
+					// everything in "if" is executed...
+					if ($(".navdesktop").hasClass("opened")) {
+						$("#floatinghead").attr('src','assets/head/bleh.gif');
+						$(".navdesktop").removeClass('opened');
+						$("#navmsg").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&uparrow; head = menu opener");
+					} else {
+						// otherwise, everything in "else" is executed.
+						$("#floatinghead").attr('src','assets/head/nyeh.gif');
+						$(".navdesktop").addClass("opened");
+
+						$("#navmsg").html("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&uparrow; " + "head = menu closer");
+					}
+
+				}
+				</script>

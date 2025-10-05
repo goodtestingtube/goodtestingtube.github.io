@@ -1,0 +1,12 @@
+@font-face {
+	font-family: "Archivo";
+	src: 
+		local("Archivo"),
+		url("../../../fonts/Archivo/Archivo[wdth\,wght].woff2") format("woff2");
+}
+@font-face {
+	font-family: "Archivo Italic";
+	src: 
+		local("Archivo Italic"),
+		url("../../../fonts/Archivo/Archivo-Italic[wdth\,wght].woff2") format("woff2");
+}

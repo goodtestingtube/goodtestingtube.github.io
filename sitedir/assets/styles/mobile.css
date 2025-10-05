@@ -1,0 +1,13 @@
+/* fucking phones, man! */
+@media screen and (max-width: 640px){
+	headofdoom, .ohmy {
+		width: 64px !important;
+		height: 64px !important;
+		background-size: 64px !important;
+	}
+
+	header {
+		background-position: top -5px right 0;
+		background-size: 96px;
+	}
+}

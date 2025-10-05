@@ -1,0 +1,1 @@
+$('header').load('/assets/inserts/header.txt');

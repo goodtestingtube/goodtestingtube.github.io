@@ -1,0 +1,30 @@
+@import url("fonts/all.css"); /* file where fonts live */
+@import url("mobile.css"); /* fucking. phones. >:( */
+@import url("components/header.css"); /* file where header styling lives */
+
+body {
+	margin: 0;
+	background: #f5efd3;
+	color: #000;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+hr {
+	border: solid #000;
+}
+
+a:link, a:visited {
+	font-weight: 800;
+	font-stretch: semi-condensed;
+	color: #3b38cf;
+}
+a:active {
+	color: #ff1648;
+	font-stretch: normal;
+	font-weight: 900;
+}
+.container {
+	margin: auto;
+	width: 85vw;
+	display: block;
+}
