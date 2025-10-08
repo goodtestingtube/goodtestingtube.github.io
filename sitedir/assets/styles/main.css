@@ -7,6 +7,7 @@ body {
 	background: #f5efd3;
 	color: #000;
 	font-family: 'Times New Roman', Times, serif;
+	cursor: crosshair;
 }
 
 hr {

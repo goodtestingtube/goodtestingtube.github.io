@@ -3,6 +3,10 @@
 	height: 96px;
 	display: block;
 }
+.headofdoom:hover {
+	cursor: pointer;
+}pointer;
+}
 
 header {
 	background: #699 url("../../bgf/bbdc.svg") right no-repeat;
