@@ -28,4 +28,5 @@ a:active {
 	margin: auto;
 	width: 85vw;
 	display: block;
+	cursor: crosshair;
 }
