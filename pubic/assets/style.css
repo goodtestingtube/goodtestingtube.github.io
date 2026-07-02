@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+/* add local font later */
+
+html, body {
+	background: #fff;
+	color: #000;
+	font-family: Archivo, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+}
+
+header {
+	font-weight: 900;
+	font-size: 48px;
+}
+
+nav.home { 
+	font-size: 48px;
+}
+
+nav { 
+	font-size: 36px;
+	color: #ccc;
+}
+
+nav a:link, nav a:visited, nav a:hover, nav a:active {
+	color: #666;
+}
+nav a:hover {
+	color: #ccc;
+}
+nav a:active {
+	color: #333;
+}
+
+.unimportant {
+	font-weight: 300;
+	font-size: 18px;
+}
+.even_more_unimportant {
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.container {
+	width: 550px;
+}
+
+.na_kicker {
+	color: #ccc;
+	text-decoration: line-through;
+}
