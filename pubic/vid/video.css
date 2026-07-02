@@ -1,0 +1,39 @@
+html,body {
+background:#333;
+color: #fff;
+}
+
+main #list {
+font-size: 16px;
+font-weight: normal;
+}
+
+/* listings */
+
+series {
+	font-weight: 900;
+}
+name {
+	font-weight: 600;
+}
+year {
+	font-weight: 450;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+	color: #fff;
+}
+
+.pixu, .pixu a:link { 
+	color: #fc0 !important;
+}
+
+/* player */
+video#yes {
+	width: 100vw;
+	height: 100vh;
+}
+body.player { 
+	background: #000;
+	margin: 0;
+}

@@ -4,6 +4,11 @@
 User-agent: *
 Allow: /
 
+# Prevent from indexing video player as this site does not use PHP
+User-agent: *
+Disallow: /vid/videoplayer.html
+Disallow: /vid/videoplayer
+
 # If you do not want AI bots to crawl your site, remove the # from the following lines:
 User-agent: AI2Bot
 User-agent: Ai2Bot-Dolma
