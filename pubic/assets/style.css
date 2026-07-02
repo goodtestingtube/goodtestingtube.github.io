@@ -25,12 +25,18 @@ nav {
 
 nav a:link, nav a:visited, nav a:hover, nav a:active {
 	color: #666;
+	transition: font-weight 120ms;
 }
 nav a:hover {
 	color: #ccc;
+	font-weight: 700;
 }
 nav a:active {
 	color: #333;
+}
+
+nav.home a:hover {
+	font-weight: 900;
 }
 
 .unimportant {
