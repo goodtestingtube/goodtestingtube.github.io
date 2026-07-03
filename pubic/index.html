@@ -24,7 +24,7 @@ content="aleph diallo,badbunsen,badbunsen.com,graphic design,graphic design is m
 <body>
 
 <div class="container">
-<header>badbunsen's neocities website.</header>
+<header id="jesusscreen">badbunsen's neocities website.</header>
 <br>
 
 <nav class="home">index. <a href="about.html">about.</a> <a href="comics/index.html">comics.</a>
@@ -54,6 +54,17 @@ webring to recognize this site. it SHOULD be hidden -->
 <a href="https://baccyflap.com/noai/?nxt&s=bad" target="_top">next »</a>
 </div> 
 </div>
+
+<script>
+    function jes() {
+        document.getElementById("jesusscreen").setAttribute("style","");
+        document.getElementById("jesusscreen").innerHTML = "artist badbunsen's (minimal/brutal)ist neocities website.";
+        document.getElementById("jesusscreen").style = "font-size: 96px;"
+    }
+  if (navigator.userAgent === "Screenjesus") {
+    jes();
+  }
+</script>
 
 </body>
 </html>
