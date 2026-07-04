@@ -6,7 +6,7 @@ html, body {
 	color: #000;
 	font-family: Archivo, Arial, Helvetica, sans-serif;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 16px;
 }
 
 header {
@@ -14,18 +14,26 @@ header {
 	font-size: 48px;
 }
 
+
 nav.home { 
 	font-size: 48px;
+	font-weight: 900;
+}
+
+nav.home a:link {
+	font-weight: 700;
 }
 
 nav { 
-	font-size: 36px;
+	font-size: 24px;
 	color: #ccc;
+	font-weight: 700;
 }
 
 nav a:link, nav a:visited, nav a:hover, nav a:active {
 	color: #666;
 	transition: font-weight 120ms;
+	font-weight: 400;
 }
 nav a:hover {
 	color: #ccc;
@@ -55,4 +63,20 @@ nav.home a:hover {
 .na_kicker {
 	color: #ccc;
 	text-decoration: line-through;
+}
+
+@media (prefers-color-scheme: dark) {
+	html, body {
+		background: #333;
+		color: #fff;
+	}
+	a:link {
+		color: #0ff;
+	}
+	a:visited {
+		color: #0cc;
+	}
+	a:active {
+		color: #f00;
+	}
 }

@@ -20,10 +20,15 @@ year {
 	font-weight: 450;
 }
 
-a, a:link, a:visited, a:hover, a:active {
-	color: #fff;
+a:link {
+	color: #0ff;
 }
-
+a:visited {
+	color: #0cc;
+}
+a:active {
+	color: #f00;
+}
 .pixu, .pixu a:link { 
 	color: #fc0 !important;
 }
@@ -36,4 +41,11 @@ video#yes {
 body.player { 
 	background: #000;
 	margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+	html, body {
+		background: #000;
+		color: #fff;
+	}
 }
