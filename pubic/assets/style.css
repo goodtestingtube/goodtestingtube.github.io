@@ -6,7 +6,7 @@ html, body {
 	color: #000;
 	font-family: Archivo, Arial, Helvetica, sans-serif;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 header {
@@ -63,6 +63,10 @@ nav.home a:hover {
 .na_kicker {
 	color: #ccc;
 	text-decoration: line-through;
+}
+
+pre {
+	font-family: monospace;
 }
 
 @media (prefers-color-scheme: dark) {
