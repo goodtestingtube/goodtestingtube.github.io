@@ -15,13 +15,16 @@ header {
 }
 
 
-nav.home { 
+.home { 
 	font-size: 48px;
 	font-weight: 900;
+	color: #ccc;
 }
 
-nav.home a:link {
+.home a:link, .home a:visited {
 	font-weight: 700;
+	transition: font-weight 120ms;
+	color: #666;
 }
 
 nav { 
@@ -35,15 +38,15 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {
 	transition: font-weight 120ms;
 	font-weight: 400;
 }
-nav a:hover {
+nav a:hover, .home a:hover {
 	color: #ccc;
 	font-weight: 700;
 }
-nav a:active {
+nav a:active, .home a:active {
 	color: #333;
 }
 
-nav.home a:hover {
+.home a:hover {
 	font-weight: 900;
 }
 
