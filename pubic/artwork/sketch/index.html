@@ -19,6 +19,8 @@ content="aleph diallo,badbunsen,badbunsen.com,comics,graphic novel,webtoon,webco
 
 <link rel="stylesheet" href="../../assets/style.css" type="text/css">
 
+<link rel="preload" href="shitthe.js" as="script">
+
 </head>
 
 <body>
@@ -47,15 +49,22 @@ artwork. <a href="../vid/index.html">videos.</a>
 
 <!-- BEGIN MAIN CONTENT -->
 <main>
-<p><b>Trigger warning</b>: 
+<p><b>Trigger warning</b> (censored below): 
     <span id="trigger">
         <script type="text/javascript">document.write("None");</script>
         <noscript>IDK man, you're on your own. You should probably enable JavaScript for this site.</noscript>
     </span></p>
 
+     <hr>
+
     <center>
-    <img src="../../assets/error.png" width="75%"
-    alt="I haven't made much yet srry">
+<a href="#latest" onClick="getEarliest(); return false;">Earliest</a> | 
+    <a href="#latest" onClick="getLatest(); return false;">Latest</a> 
+    <br>
+    <hr>
+    <a href="" id="cantgoback"><img src="../../assets/error.png" width="75%"
+    alt="javascript is not enabled" id="istanbul"></a><br>
+    <small><small>Click the preview image above to get a high-quality (potentially uncensored) image. Make sure you read the trigger warnings if you don't want to be surprised.</small></small>
     </center>
 </main>
 <!-- END MAIN CONTENT -->
@@ -74,8 +83,10 @@ Copyright &copy; Aleph Diallo (badbunsen).<br>
 <!-- END FOOTER -->
 </div>
 
-<script type="text/javascript">
+<script type="text/javascript" src="shitthe.js">
 </script>
-
+<script type="text/javascript">
+    getLatest();
+</script>
 </body>
 </html>
