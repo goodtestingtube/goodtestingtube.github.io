@@ -40,6 +40,7 @@ function getPosition() {
     antinople.src = "theshit/thumb/" + position + ".jpg";
     antinople.alt = position;
     cantgoback.href = "theshit/" + position + ".jpg";
+    antinople.setAttribute("position",position);
     console.log(position);
 }
 
@@ -53,4 +54,28 @@ function getEarliest() {
     position = earliest;
     getPosition();
     triggerWarning();
+}
+
+function getPrev() {
+    if (position == earliest) {
+        console.log("nope");
+    } else {
+        var po = antinople.getAttribute("position");
+        var index = murray.indexOf(po);
+        position = murray[index + 1];
+        getPosition();
+        triggerWarning();
+    }
+}
+
+function getNext() {
+    if (position == latest) {
+        console.log("nope");
+    } else {
+        var po = antinople.getAttribute("position");
+        var index = murray.indexOf(po);
+        position = murray[index - 1];
+        getPosition();
+        triggerWarning();
+    }
 }
