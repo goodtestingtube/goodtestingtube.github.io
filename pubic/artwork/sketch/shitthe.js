@@ -59,13 +59,19 @@ function getYear() {
 }
 
 function getPosition() {
-    antinople.src = "theshit/thumb/" + position + ".jpg";
-    antinople.alt = position;
-    cantgoback.href = "theshit/" + position + ".jpg";
-    antinople.setAttribute("position",position);
-    console.log(position);
-    triggerWarning();
-    getYear();
+    if (position == undefined) {
+        antinople.src = "../../assets/error.png";
+        antinople.alt = "error!";
+        cantgoback.href = "../../assets/error.png";
+    } else {
+        antinople.src = "theshit/thumb/" + position + ".jpg";
+        antinople.alt = position;
+        cantgoback.href = "theshit/" + position + ".jpg";
+        antinople.setAttribute("position",position);
+        console.log(position);
+        triggerWarning();
+        getYear();
+    }
 }
 
 function getLatest() {
