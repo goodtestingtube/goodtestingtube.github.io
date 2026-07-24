@@ -17,12 +17,15 @@ illustration.push(
     "2026_feb_woods"
 
 );
-/*
+
 illustration.push(
 
-    "2025"
+    "2025",
 
-);*/
+    // ))sep
+    "2025_sep_conflict"
+
+);
 
 /* hopefully i will not have to touch this, but just in case...
 
