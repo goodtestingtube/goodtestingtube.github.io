@@ -11,6 +11,9 @@ var earliest;
 
 var murray = new Array();
 
+murray[33]="2026_aug_bat"
+murray[32]="2026_aug_helluva"
+murray[31]="2026_aug_akai"
 murray[30]="2025_dec_alastor"
 murray[29]="2025_dec_alastor2"
 murray[28]="2025_nov_firedemon"
