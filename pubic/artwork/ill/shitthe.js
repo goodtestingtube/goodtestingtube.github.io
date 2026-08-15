@@ -4,6 +4,8 @@ illustration.push(
 
     "2026",
 
+    // ))aug
+    "2026_aug_Untitled6",
     // ))july
     "2026_jul_Untitled34",
     "2026_jul_fish",
