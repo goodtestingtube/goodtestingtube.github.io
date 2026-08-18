@@ -50,68 +50,68 @@ var earliest = murray[0];
 var latest = murray[murray.length - 1];
 
 function triggerWarning() {
-    if (position.includes("nudity") != false) {
-        document.getElementById("trigger").innerHTML = "Nudity"
-    } else {
-        document.getElementById("trigger").innerHTML = "Nothing";
-    }
+	if (position.includes("nudity") != false) {
+		document.getElementById("trigger").innerHTML = "Nudity"
+	} else {
+		document.getElementById("trigger").innerHTML = "Nothing";
+	}
 }
 
 function getYear() {
-    document.getElementById("year").innerHTML = position.substring(0,8);
+	document.getElementById("year").innerHTML = position.substring(0,8);
 }
 
 function getPosition() {
-    if (position == undefined) {
-        antinople.src = "../../assets/error.png";
-        antinople.alt = "error!";
-        cantgoback.href = "../../assets/error.png";
-    } else {
-        antinople.src = "theshit/thumb/" + position + ".jpg";
-        antinople.alt = position;
-        cantgoback.href = "theshit/" + position + ".jpg";
-        antinople.setAttribute("position",position);
-        console.log(position);
-        triggerWarning();
-        getYear();
-    }
+	if (position == undefined) {
+		antinople.src = "../../assets/error.png";
+		antinople.alt = "error!";
+		cantgoback.href = "../../assets/error.png";
+	} else {
+		antinople.src = "theshit/thumb/" + position + ".jpg";
+		antinople.alt = position;
+		cantgoback.href = "theshit/" + position + ".jpg";
+		antinople.setAttribute("position",position);
+		console.log(position);
+		triggerWarning();
+		getYear();
+	}
 }
 
 function getLatest() {
-    position = latest;
-    getPosition();
+	position = latest;
+	getPosition();
 }
 
 function getEarliest() {
-    position = earliest;
-    getPosition();
+	position = earliest;
+	getPosition();
 }
 
 function getPrev() {
-    if (position == earliest) {
-        console.log("nope");
-    } else {
-        var po = antinople.getAttribute("position");
-        var index = murray.indexOf(po);
-        position = murray[index - 1];
-        getPosition();
-    }
+	if (position == earliest) {
+		console.log("nope");
+	} else {
+		var po = antinople.getAttribute("position");
+		var index = murray.indexOf(po);
+		position = murray[index - 1];
+		getPosition();
+	}
 }
 
 function getNext() {
-    if (position == latest) {
-        console.log("nope");
-    } else {
-        var po = antinople.getAttribute("position");
-        var index = murray.indexOf(po);
-        position = murray[index + 1];
-        getPosition();
-    }
+	if (position == latest) {
+		console.log("nope");
+	} else {
+		var po = antinople.getAttribute("position");
+		var index = murray.indexOf(po);
+		position = murray[index + 1];
+		getPosition();
+	}
 }
 
 function getRand() {
-    let i = Math.floor(Math.random() * murray.length);
-    let r = murray[i];
-    position = r;
-    getPosition();
+	let i = Math.floor(Math.random() * murray.length);
+	let r = murray[i];
+	position = r;
+	getPosition();
 }
