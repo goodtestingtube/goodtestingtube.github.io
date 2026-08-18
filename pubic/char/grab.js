@@ -29,6 +29,6 @@ for (let idx = 0; idx < char.length; idx+=2) {
 		its + 
 		'/index.htm" target="_blank"><img src="arsets/charicons/' +
 		its + '.jpg" class="thumb"' +
-		' alt="' + Its + '"></a>');
+		' alt="' + Its + '" title="' + Its + '"></a>');
 }
 /* END IMPORTANT SHIT */
