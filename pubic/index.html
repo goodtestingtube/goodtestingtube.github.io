@@ -19,16 +19,52 @@ content="aleph diallo,badbunsen,badbunsen.com,graphic design,graphic design is m
 
 <link rel="stylesheet" href="assets/style.css" type="text/css">
 
+<style type="text/css">
+	html {
+		background-image: url("assets/anim/idle.gif");
+		background-size: 60px;
+	}
+	thebox {
+		background: #333;
+		color: #fff;
+		display: block;
+		padding: 12px;
+	}
+	thebox a:link {
+		color: #0ff;
+	}
+	thebox a:visited {
+		color: #0cc;
+	}
+	thebox a:active {
+		color: #f00;
+	}
+	@media (prefers-color-scheme: dark) {
+		thebox {
+			background: #fff;
+			color: #000;
+		}
+		thebox a:link {
+			color: #00f;
+		}
+		thebox a:visited {
+			color: #639;
+		}
+		thebox a:active {
+			color: #f00;
+		}
+	}
+</style>
+
 </head>
 
 <body>
 
-<img src="assets/anim/idle.gif" alt="that's me in the corner" title="that's me in the corner">
-
 <div class="container">
+<thebox>
 <header id="jesusscreen">badbunsen's neocities website.</header>
 <br>
-
+<!-- BEGIN MAIN NAVIGATION -->
 <nav class="home">index. <a href="about.html">about.</a>
 <a href="artwork/index.html">artwork.</a> <a href="vid/index.html">videos.</a>
 <a href="char/index.html">characters.</a> <a href="contact.html">contact.</a>
@@ -50,6 +86,7 @@ Copyright &copy; Aleph Diallo (badbunsen).<br>
 </footer>
 <!-- END FOOTER -->
 </div>
+</thebox>
 
 <!-- i'll display this on the about page later but it has to be here for the 
 webring to recognize this site. it SHOULD be hidden -->

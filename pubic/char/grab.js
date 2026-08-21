@@ -15,6 +15,9 @@ char.push(
 
 	IMPORTANT SHIT BEGINS HERE
 */
+
+document.write("Hover over an icon to see the character's name<br>");
+
 for (let idx = 0; idx < char.length; idx+=2) {
 	/* for debug purposes */
 	console.log(char[idx]);
