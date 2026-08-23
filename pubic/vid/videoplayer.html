@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>Video Player!</title>
+<title>Video Player! (not mobile friendly at all)</title>
 
 <link rel="preload" href="../assets/style.css" as="style">
 <link rel="preload" href="./video.css" as="style">
@@ -18,17 +18,29 @@
 
 <body class="player">
 
-<!--
 
-ad
-<script src="https://u.widget.st/ar.js"></script>
-<center><ws-widget type="adbank" iid="7522" embed="iframe"></ws-widget></center><br>
-
--->
-
+<main>
+<div id="tv_container">
+<span id="shelf_bg"></span>
+<div id="receiver">poop</div>
 <video id="yes" src="">
+	Your browser doesn't support video. Try downloading it instead, it's in
+	the guide.
 </video>
+</div>
+</main>
 
+<!-- BEGIN MAIN NAVIGATION -->
+<nav><a href="../index.html">index.</a> <a href="../about.html">about.</a>
+<a href="../artwork/index.html">artwork.</a> videos.
+<a href="../char/index.html">characters.</a> <a href="../contact.html">contact.</a>
+<a href="../blog/index.html">blog.</a> <a href="../links.html">links.</a></nav>
+<!-- END MAIN NAVIGATION -->
+ 
+<hr>
+
+<script src="https://u.widget.st/ar.js"></script>
+<ws-widget type="adbank" iid="7522" embed="iframe"></ws-widget>
 
 <script type="text/javascript">
 	getVideo();

@@ -1,6 +1,6 @@
 function openPlayer(identifier) {
 	var url = "videoplayer.html?identifier=" + identifier;
-	window.open(url);
+	window.location = url;
 }
 
 function getVideo() {
@@ -13,10 +13,9 @@ function getVideo() {
 	const urlParams = new URLSearchParams(queryString);
 	var identifier = urlParams.get('identifier');
 	if (identifier != undefined) {
-		player.setAttribute("controls","true");
+		player.setAttribute("cool","yes");
 	} else {
 		var identifier = "static";
-		player.setAttribute("loop","true");
 	}
 	const fileName = "https://cdn.badbunsen.com/videos/" + identifier + ".mp4";
 	console.log("url is " + fileName + ".");
@@ -24,8 +23,10 @@ function getVideo() {
 	function playVideo() { 
 		player.src = fileName;
 		window.addEventListener("load", function() {
+			if (identifier = "static") {
 			player.setAttribute("autoplay","true");
-			audioElement.play();
+			player.setAttribute("loop","true");
+			}
 		});
 	}
 	

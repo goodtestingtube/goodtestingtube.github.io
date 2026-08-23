@@ -87,8 +87,15 @@ pre {
 	a:active {
 		color: #f00;
 	}
+	hr {
+		color: #fff;
+	}
 }
 
 b {
 	font-weight: bold;
+}
+
+hr {
+	color: #000;
 }
