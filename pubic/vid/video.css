@@ -52,52 +52,60 @@ a:active {
 	color: #fc0 !important;
 }
 
-#shelf_bg {
-	display: block;
-	position: absolute;
-	z-index: 1;
-	image-rendering: pixelated;
-	width: 626px;	
-	height: 649px;
-	background: url("ass/ui_vidplaybg_noguide.gif")
-}
-
-/* player */
-video#yes {
-	width: 472px /* + 4px border = 480px */;
-	height: 352px /* + 4px border = 360px */;
-	position: absolute;
-	z-index: 2;
-	top: 72px;
-	left: 83px;
-	background:#000;
-	color:#fff;
-	border: 4px solid black;
-}
-
-#receiver {
-	background: #000;
-	color:#fff;
-	display: block;
-	width: 186px /* + 8px padding = 202px */;
-	height: 28px /* + 8px padding = 44px */;
-	position: absolute;
-	z-index: 1;
-	padding: 8px;
-	text-align: center;
-	top: 544px;
-	left: 157px;
-	font-family: "Minisystem", "Courier New", monospace;
-	font-size: 24px;
-	text-transform: uppercase;
-}
-
-#tv_container {
-	position: fixed;
-	top: 50px;
-	right: 700px;
-}
-
 hr {
 	color: #fff;
+}
+
+.mobile_warning {
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	position:fixed;
+	z-index: 100;
+	background-color: #ff0;
+	color: #000;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font-size:2em;
+}
+
+@media screen and (orientation:portrait) {
+	.mobile_warning {
+		display: block;
+	}
+}
+
+#menu {
+	display: block;
+	position: absolute;
+	width: 468px;
+	height: 468px;
+	background: #fff transparent;
+	top: 60px;
+	right: 10px;
+	aspect-ratio: 1/1;
+}
+#title {
+	display: block;
+	background: #000;
+	width: calc(468px - 24px);
+	height: calc(64px - 24px);
+	padding: 12px;
+	border-radius: 10px 10px 0px 0px;
+	font-family: 'Minisystem', 'Courier New', monospace;
+	font-size: 24px;
+	text-align: center;
+}
+#menu_rest {
+	display: block;
+	background: #fff;
+	width: 468px;
+	height: 404px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+video#yes {
+	aspect-ratio: 4/3;
+
 }
