@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="shared.css">
 		<style>
 			#coolheader {
-				font-size: 14vw;
+				font-size: clamp(16px, 12vw, 128px);
 				font-family: Libre Franklin, "Arial Black", Helvetica, sans-serif;
 				font-weight: 900;
 				color: #fff;
@@ -22,22 +22,37 @@
 				bottom: -5vh;
 				right: 3vw;
 				text-align: right;
+				z-index: 1;
+			}
+			#coolenter {
+				font-family: Inter, "Arial Black", Helvetica, sans-serif;
+				font-size: clamp(24px, 14vw, 160px);
+				font-width: 900;
+				color: #fc0 !important;
+				text-shadow: 1.5vw 1.5vw 0px #f00;
+				text-transform: uppercase;
+			}
+			#coolenter a {
+				color: #fc0 !important;
 			}
 		</style>
 	</head>
 	<body>
 		<header>
-			<h1 id="coolheader" class="withatrail">Aleph Diallo designs stuff.</h1>
+			<h1 id="coolheader" class="withatrail"> &uparrow; Aleph Diallo designs stuff.</h1>
 		</header>
-		<p style="text-indent: 32px; font-size: 18px;">As a kid growing up in Brooklyn,
-		Aleph Diallo always loved making stuff up. Not lies, but things 
-		of his own. Characters, stories, illustrations, fancomics, 
-		fake cartoons with a smorgasboard of copyrighted characters,
-		and more of the typical little-kid faire. Once he discovered 
-		the internet as a wee lad, he found out about Greeny Phatom 
-		& Adobe Animate and these things changed his life forever. 
-		It eventually led to him figuring out how to make websites, 
-		and thus the ultimate quest to make a website with consistent 
-		branding had begun. He is currently majoring in graphic design.</p>
+		<p style="text-indent: 32px; font-size: 24px;"><em>As a kid growing up in Brooklyn,
+			Aleph Diallo always loved making stuff up. Not lies, but things 
+			of his own. Characters, stories, illustrations, fancomics, 
+			fake cartoons with a smorgasboard of copyrighted characters,
+			and more of the typical little-kid faire. Once he discovered 
+			the internet as a wee lad, he found out about Greeny Phatom 
+			& Adobe Animate and these things changed his life forever. 
+			It eventually led to him figuring out how to make websites, 
+			and thus the ultimate quest to make a website with consistent 
+			branding had begun. He is currently majoring in graphic design.</em></p>
+		<nav id="coolenter">
+			<a href="work.html"><strong>here is his work.</strong></a>
+		</nav>
 	</body>
 </html>
