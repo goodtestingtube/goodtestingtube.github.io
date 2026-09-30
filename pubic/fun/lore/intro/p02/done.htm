@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang=en>
 	<head>
-		<title>YEA(thereare)-RULES-IN (the) FUNZONE!</title>
+		<title>NOW-FOR-SEN THE FUNZONE!</title>
 		<meta name="author" content="Aleph Diallo (badbunsen.com)">
-		<link rel="icon" href="../../favicon.ico">
+		<link rel="icon" href="../../../favicon.ico">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<style type="text/css">
 			@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
@@ -38,6 +38,7 @@
 				"<span id="waitamin"></span><noscript>W</noscript>ho's Jane?"
 				<script type="text/javascript" language="JavaScript">
 					const dayNum = new Date().getDay();
+					var dayName;
 					if (dayNum == 0) {
 						var dayName = "Sunday";
 					} else if (dayNum == 1) {
@@ -54,17 +55,19 @@
 						var dayName = "Saturday";
 					}
 
-					if (dayNum !== 1, dayNum !== 3, dayNum !== 5) {
-						document.getElementById("waitamin").innerHTML = ("Isn't today " + dayName + "? And w");
-					} else {
+					if (dayName == 1 || dayNum == 3 || dayNum == 5) {
 						document.getElementById("waitamin").innerHTML = ("W");
+						console.log(dayNum);
+						console.log(dayName);
+					} else {
+						document.getElementById("waitamin").innerHTML = ("Isn't today " + dayName + "? And w");
 					}
 				</script>
 			</p>
-			<p><em>Blah Guy rolls his eyes and says nothing.</em></p>
+			<p><em>Blah Guy rolls his eyes and says nothing. He passes you the brochure pamphlet.</em></p>
 			<p style="text-indent: 0px; font-size: 120%;">
 				<strong>
-					<a href="../home/">&gt;</a> <em>And now... the funzone!</em>
+					<a href="../../../home/index.htm">&gt;</a> <em>Read the funzone pamphlet. <small>(this is the homepage)</small></em>
 				</strong>
 			</p>
 	</body>
