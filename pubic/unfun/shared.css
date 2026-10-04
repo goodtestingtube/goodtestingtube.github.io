@@ -4,13 +4,35 @@ html {
 	background: #7b7b7b;
 	color: #fff;
 	font-family: "EB Garamond", "Times New Roman", Times, serif;
+	font-size: 14pt;
 }
 
-a:link {
+nav a:link, nav a:visited {
 	color: #000;
 }
-a:visited {
-	color: #333;
+nav a:hover, nav a:active {
+	color: #fc0;
+}
+nav .yesimonthepage {
+	color: #fff;
+	text-decoration: none;
+}
+nav {
+	font-size: 32pt;
+	font-weight: 700;
+	font-family: Libre Franklin, "Arial Black", Helvetica, sans-serif;
+	background: #7b7b7b;
+	color: #000;
+	display: block;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	left: 0;
+	padding: 4px;
+}
+
+.thumb {
+	width: 128px;
 }
 
 .withatrail {
