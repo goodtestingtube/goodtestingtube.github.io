@@ -38,6 +38,6 @@ jobs:
         with:
           # Upload pubic repository
           path: './pubic/'
-      - name: Deploy to GitHub Pages
+      - name: Deploy site to www.badbunsen.com via GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
