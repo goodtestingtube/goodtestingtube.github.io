@@ -4,10 +4,6 @@
 User-agent: *
 Allow: /
 
-# Prevent from indexing fun home
-User-agent: *
-Disallow: /fun/home.htm
-
 
 # If you do not want AI bots to crawl your site, remove the # from the following lines:
 User-agent: AI2Bot
@@ -27,7 +23,7 @@ User-agent: FacebookBot
 User-agent: FriendlyCrawler
 Disallow: /
 
-# exclude gooble stuff
+# exclude gooble stuff because man is this vague
 #User-agent: Google-Extended
 #User-agent: GoogleOther
 #User-agent: GoogleOther-Image
