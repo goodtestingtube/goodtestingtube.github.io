@@ -1,1 +1,2 @@
-<a href="https://badbunsen.com">badbunsen.com</a>. or <a href="https://badbunsen.neocities.org">badbunsen.neocities.org</a>. whichever one.
+# Site code
+For a website called badbunsen.com. Fun to be had here, I'll tell you hwhat
