@@ -15,7 +15,7 @@
 
 		<style type="text/css">
 			body {
-				background: #099;
+				background: #a12;
 				color: #000;
 				text-align: center;
 				font-family: Arial, Helvetica, sans-serif;
@@ -30,102 +30,142 @@
 			a:visited {
 				color: #fff;
 			}
+
+			.container_bg {
+				width: 480px;
+				height: 400px;
+				background: #f61;
+				border: 4px solid #fff;
+				margin: auto;
+				margin-top: 100px;
+				border-radius: 8px;
+				transform: translate(-50%) skew(-10deg);
+				position: absolute;
+				left: 50%;
+				display: block;
+			}
+			.container {
+				width: 440px;
+				height: 320px;
+				background: transparent;
+				margin: auto;
+				margin-top: 100px;
+				border-radius: 8px;
+				transform: translate(-50%);
+				position: absolute;
+				left: 50%;
+				padding: 20px;
+				display: block;
+				text-align: left;
+				margin-left: 16px;
+				margin-right: 12px;
+			}
+			.meee {
+				position: absolute;
+				top: -40px;
+				right: -40px;
+				width: 128px;
+				filter: 
+				drop-shadow(3px 3px 0 white)
+				drop-shadow(-3px 3px 0 white)
+				drop-shadow(3px -3px 0 white)
+				drop-shadow(-3px -3px 0 white);
+			}
+			.logo {
+				width: 260px;
+			}
+
+			@media screen and (max-width: 599px) {
+				.container {
+					width: 80%;
+					height: auto;
+					background: #f61;
+					margin: auto;
+					margin-left: default;
+					margin-right: default;
+					font-size: 110%;
+				}
+				.meee {
+					position: static;
+					float: right;
+					width: 40%;
+					filter: none;
+				}
+				.logo {
+					width: 75%;
+				}
+				.notmobile {
+					display: none !important;
+				}
+			}
 		</style>
 	</head>
 	<body>
-		<h2>Ok, so NONE OF THESE sections are fully finished yet, but the unfun section is getting closer to a finished state.
-			<a href="https://badbunsen.com/older/">For now, please visit the backup</a> if you want to see some of the art that
-			was here and stuff, that
-			should have everything. <small>man adding content to a site sucks</small></h2>
-		<h1>
-		<strong>
-		<img 
-		src=siteside/siteart/userinterface/homepage/sitename.gif
-		alt="Badbunsen">
-		</strong>
-		</h1>
 
-		<p>
-		<em>
-		<strong>
-		Choose which part of the site you want to tread through!
-		</strong>
-		</em><br>
-		<small>(You can hover over the "fun", "midpoint" and "unfun" 
-			buttons to see what they mean)</small>
-		</p>
-
-
-		<p>
-		<a href=fun/index.htm><img 
-		src=siteside/siteart/userinterface/homepage/fun.gif
-		alt="The fun section (personal art)"
-		title="Personal art"
-		width=114.75
-		border=0></a>
+		<div class="container_bg notmobile"></div>
 		
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="container">
+			
 
-		<a href="https://badbunsen.neocities.org"><img 
-		src=siteside/siteart/userinterface/homepage/midpoint.gif
-		alt="The midpoint* section (blog, * = hosted on neocities)"
-		title="Personal art"
-		width="159"
-		border=0></a>
-
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<!--greatest html of all time-->
-		
-		<a href=unfun/index.html><img 
-		src=siteside/siteart/userinterface/homepage/unfun.gif
-		alt="The unfun section (portfolio + resume)"
-		title="Portfolio and resume"
-		width=127.5
-		border=0></a>
-		</p>
+			<img src="siteside/siteart/me.svg" class="meee"
+		alt="Drawing of my OC">
 
 
-		<p>
-		<small>If you're looking for something that seems to<br>
-		be missing, it might be on 
-		<a href="https://badbunsen.com/older/">the older version of the site, located here.</a><br>
-		<small>(https://badbunsen.com/older/)</small>
-		</small>
-		</p>
+			<header>
+			<p>
+				<img src="siteside/siteart/logo of sorts.svg" 
+				class="logo" alt="@badbunsen">
+			<br>
+				<small>(Aleph Diallo, graphic designer)</small>
+			</p>
+			</header>
+			
+			<nav>
+				<p><strong>
+					<a href="index.html">links</a> <big><big><b>*</b></big></big>
+					<a href="about.html">about</a> <big><big><b>*</b></big></big>
+					<a href="unfun/" target="_blank">pro work</a> <big><big><b>*</b></big></big>
+					<a href="art.html">art</a>
+				</strong>
+			</nav>
 
-		<p><small>
-		This site is mainly accessible through badbunsen.com, but<br>
-		there is a neocities mirror as well just for the hell of
-		it + to encourage myself to keep updating.<br>
-		If you're seeing double on search results
-		for my username, this is why.</small>
-		</p>
+			<main>
 
-		<p>
-		<img 
-		src=siteside/siteart/userinterface/homepage/contact.gif
-		alt="Contact me: yell [at] badbunsen.com"
-		title='I really hope you can translate the "at" to the address symbol.'
-		width=276>
-		</p>
+				<p>
+					<b>mostly professional & select personal work</b>:<br>
+					
+					<a href="https://www.badbunsen.com" target="_blank">this very site</a> <b>*</b>
+					<a href="https://www.youtube.com/@Badbunsen">youtube</a> <b>*</b>
+					<a href="https://neocities.org/site/badbunsen">neocities</a>
+				</p>
+				
+				<p>
+					<b>misc.</b> (personal, usually not art-related):<br>
 
-		<p>
-		Copyright &copy; 2026 Aleph Diallo.<br>
-		All rights reserved, unless otherwise noted.
-		</p>
+					<a href="https://rateyourmusic.com/~goodburnertesttube">rateyourmusic</a> <b>*</b> 
+					<a href="https://listenbrainz.org/user/badbunsen/">listenbrainz</a>
+				</p>
 
-		<p>
-			<img src=siteside/bbbutton.gif
-			alt="button that usually links back here"
-			class="button">
-		</p>
+			</main>
+			
+			<footer>
+				<small>
+					<p>
+					part of the no ai webring, where no sites use llms:
+					<br>
+					<a href="https://baccyflap.com/noai/?prv&s=bad" target="_top">« prev</a> |
+					<a href="https://baccyflap.com/noai" target="_blank">no ai webring</a>
+					<a style="font-size:60%" href="https://baccyflap.com/noai/?rnd" target="_top">(random)</a> |
+					<a href="https://baccyflap.com/noai/?nxt&s=bad" target="_top">next »</a>
+					</p>
+					<p>
+					<img src="siteside/bbbutton.gif" width="88" height="31" class="button"
+					alt="Badbunsen.com button.">
+					</p>
+				</small>
+			</footer>
 
-		<p>
-			<a href="https://baccyflap.com/noai/?prv&s=bad" target="_top">« prev</a> |
-			<a href="https://baccyflap.com/noai" target="_blank">no ai webring</a>
-			<a style="font-size:60%" href="https://baccyflap.com/noai/?rnd" target="_top">(random)</a> |
-			<a href="https://baccyflap.com/noai/?nxt&s=bad" target="_top">next »</a>
-		</p>
+		</div>
 
 	</body>
 </html>
