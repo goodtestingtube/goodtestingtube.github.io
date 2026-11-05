@@ -87,6 +87,18 @@
 				margin: 0;
 			}
 
+			@media screen and (orientation: landscape) and (min-width: 600px) and (max-width: 960px) {
+				.everything {
+					margin-top: -70px;
+				}
+			}
+
+			@media screen and (min-width: 1024px) {
+				.everything {
+					transform: scale(130%);
+				}
+			}
+
 			/* make more boring for mobile */
 			@media screen and (max-width: 599px) {
 				.container {
@@ -114,6 +126,8 @@
 		</style>
 	</head>
 	<body>
+
+		<div class="everything">
 
 		<div class="container_bg notmobile"></div>
 		
@@ -172,12 +186,22 @@
 					<a style="font-size:60%" href="https://baccyflap.com/noai/?rnd" target="_top">(random)</a> |
 					<a href="https://baccyflap.com/noai/?nxt&s=bad" target="_top">next »</a>
 					</p>
+					
+					<!-- site button -->
 					<p>
 					<img src="siteside/bbbutton.gif" width="88" height="31" class="button"
 					alt="Badbunsen.com button.">
 					</p>
+					
+					<p>
+					<small>
+					&copy; Aleph Diallo. Some rights reserved, most wrongs rehearsed.
+					</small>
+					</p>
 				</small>
 			</footer>
+
+		</div>
 
 		</div>
 
