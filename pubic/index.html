@@ -30,7 +30,7 @@
 			a:visited {
 				color: #fff;
 			}
-
+			/* skewed background for all text */
 			.container_bg {
 				width: 480px;
 				height: 400px;
@@ -44,6 +44,7 @@
 				left: 50%;
 				display: block;
 			}
+			/* actual contents of the site */
 			.container {
 				width: 440px;
 				height: 320px;
@@ -60,21 +61,33 @@
 				margin-left: 16px;
 				margin-right: 12px;
 			}
+			/* that's me in the corner */
 			.meee {
 				position: absolute;
 				top: -40px;
 				right: -40px;
 				width: 128px;
 				filter: 
-				drop-shadow(3px 3px 0 white)
-				drop-shadow(-3px 3px 0 white)
-				drop-shadow(3px -3px 0 white)
-				drop-shadow(-3px -3px 0 white);
+				drop-shadow(4px 4px 0 #f61)
+				drop-shadow(-4px 4px 0 #f61)
+				drop-shadow(4px -3px 0 #f61)
+				drop-shadow(-4px -3px 0 #f61)
+				drop-shadow(6px 3px 0 #fff)
+				drop-shadow(3px -3px 0 #fff)
+				drop-shadow(-2px -3px 0 #fff);
 			}
+
+			/* inline wordmark */
 			.logo {
 				width: 260px;
 			}
 
+			.logoheader {
+				display: inline-block;
+				margin: 0;
+			}
+
+			/* make more boring for mobile */
 			@media screen and (max-width: 599px) {
 				.container {
 					width: 80%;
@@ -113,8 +126,8 @@
 
 			<header>
 			<p>
-				<img src="siteside/siteart/logo of sorts.svg" 
-				class="logo" alt="@badbunsen">
+				<h1 class="logoheader"><img src="siteside/siteart/logo of sorts.svg" 
+				class="logo" alt="@badbunsen"></h1>
 			<br>
 				<small>(Aleph Diallo, graphic designer)</small>
 			</p>
